@@ -1,0 +1,9 @@
+.control__lead {
+  font-family: $font-head;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}

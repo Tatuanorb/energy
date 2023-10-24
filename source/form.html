@@ -4,216 +4,353 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кэт энерджи: Функциональное питание для котов</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2">
 </head>
 
 <body class="page__body">
+  <svg style="display: none;">
+    <defs>
+      <clipPath id="clip0_2403_686">
+        <rect width="23" height="23" />
+      </clipPath>
+
+      <clipPath id="clip0_2403_1829">
+        <rect width="20" height="20" />
+      </clipPath>
+    </defs>
+    <symbol id="html-academy" viewBox="0 0 27 34">
+      <g>
+        <path
+          d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+         />
+      </g>
+    </symbol>
+    <symbol id="icon_email" viewBox="0 0 19 14">
+      <g>
+        <g>
+          <g>
+            <line x1="1.1793" y1="6" x2="1.1793" y2="14" stroke="#222222" stroke-width="1.3" />
+            <line x1="18.1793" y1="6" x2="18.1793" y2="14" stroke="#222222" stroke-width="1.3" />
+            <line x1="0.529297" y1="13.35" x2="18.5293" y2="13.35" stroke="#222222" stroke-width="1.3" />
+            <line x1="0.529297" y1="1.35" x2="18.5293" y2="1.35" stroke="#222222" stroke-width="1.3" />
+            <path
+              d="M17.8793 3.1821L9.52932 9.67654L1.1793 3.18209V1.65H4.0293L9.52932 1.65H14.5293H17.8793V3.1821Z"
+              stroke="#222222" stroke-width="1.3" />
+          </g>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="icon_facebook" viewBox="4 2 30 30">
+      <g>
+        <g>
+          <g>
+            <path id="Vector"
+              d="M21.0001 2.74976H17.5001C15.953 2.74976 14.4693 3.45999 13.3753 4.72423C12.2813 5.98846 11.6667 7.70313 11.6667 9.49103V13.5358H8.16675V18.9288H11.6667V29.7148H16.3334V18.9288H19.8334L21.0001 13.5358H16.3334V9.49103C16.3334 9.13345 16.4563 8.79051 16.6751 8.53767C16.8939 8.28482 17.1907 8.14277 17.5001 8.14277H21.0001V2.74976Z"
+              />
+          </g>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="icon_instagram" viewBox="0 0 30 30">
+      <g>
+        <g clip-path="url(#clip0_2403_686)">
+          <path
+            d="M11.4775 0.0898438C13.3942 0.0898438 14.959 0.112305 16.1719 0.157227C17.2051 0.202148 18.126 0.381836 18.9346 0.696289C19.7132 0.995768 20.387 1.43001 20.9561 1.99902C21.5251 2.56803 21.9593 3.24186 22.2588 4.02051C22.5732 4.8291 22.7529 5.75 22.7979 6.7832C22.8428 7.99609 22.8652 9.56087 22.8652 11.4775C22.8652 13.3942 22.8428 14.959 22.7979 16.1719C22.7529 17.2051 22.5732 18.126 22.2588 18.9346C21.9593 19.7132 21.5251 20.387 20.9561 20.9561C20.387 21.5251 19.7132 21.9593 18.9346 22.2588C18.126 22.5732 17.2051 22.7529 16.1719 22.7978C14.959 22.8428 13.3942 22.8652 11.4775 22.8652C9.56087 22.8652 7.99609 22.8428 6.7832 22.7978C5.75 22.7529 4.8291 22.5732 4.02051 22.2588C3.24186 21.9593 2.56803 21.5251 1.99902 20.9561C1.43001 20.387 0.995768 19.7132 0.696289 18.9346C0.381836 18.126 0.202148 17.2051 0.157227 16.1719C0.112305 14.959 0.0898438 13.3942 0.0898438 11.4775C0.0898438 9.56087 0.112305 7.99609 0.157227 6.7832C0.202148 5.75 0.381836 4.8291 0.696289 4.02051C0.995768 3.24186 1.43001 2.56803 1.99902 1.99902C2.56803 1.43001 3.24186 0.995768 4.02051 0.696289C4.8291 0.381836 5.75 0.202148 6.7832 0.157227C7.99609 0.112305 9.56087 0.0898438 11.4775 0.0898438ZM11.4775 1.57227C9.486 1.57227 7.86133 1.59473 6.60352 1.63965C5.79492 1.6696 5.04622 1.81185 4.35742 2.06641C3.2793 2.51562 2.51562 3.2793 2.06641 4.35742C1.81185 5.04622 1.6696 5.79492 1.63965 6.60352C1.59473 7.86133 1.57227 9.486 1.57227 11.4775C1.57227 13.4691 1.59473 15.0937 1.63965 16.3516C1.6696 17.1602 1.81185 17.9089 2.06641 18.5977C2.51562 19.6758 3.2793 20.4395 4.35742 20.8887C5.04622 21.1432 5.79492 21.2855 6.60352 21.3154C7.86133 21.3603 9.486 21.3828 11.4775 21.3828C13.4691 21.3828 15.0938 21.3603 16.3516 21.3154C17.1602 21.2855 17.9089 21.1432 18.5977 20.8887C19.6758 20.4395 20.4395 19.6758 20.8887 18.5977C21.1432 17.9089 21.2855 17.1602 21.3154 16.3516C21.3604 15.0937 21.3828 13.4691 21.3828 11.4775C21.3828 9.486 21.3604 7.86133 21.3154 6.60352C21.2855 5.79492 21.1432 5.04622 20.8887 4.35742C20.4395 3.2793 19.6758 2.51562 18.5977 2.06641C17.9089 1.81185 17.1602 1.6696 16.3516 1.63965C15.0938 1.59473 13.4691 1.57227 11.4775 1.57227ZM11.4775 16.0371C12.7354 16.0371 13.8097 15.5916 14.7007 14.7007C15.5916 13.8097 16.0371 12.7354 16.0371 11.4775C16.0371 10.2197 15.5916 9.14534 14.7007 8.25439C13.8097 7.36344 12.7354 6.91797 11.4775 6.91797C10.2197 6.91797 9.14534 7.36344 8.25439 8.25439C7.36344 9.14534 6.91797 10.2197 6.91797 11.4775C6.91797 12.7354 7.36344 13.8097 8.25439 14.7007C9.14534 15.5916 10.2197 16.0371 11.4775 16.0371ZM11.4775 5.63769C13.0947 5.63769 14.4723 6.20671 15.6104 7.34473C16.7484 8.48275 17.3174 9.86035 17.3174 11.4775C17.3174 13.0947 16.7484 14.4723 15.6104 15.6104C14.4723 16.7484 13.0947 17.3174 11.4775 17.3174C9.86035 17.3174 8.48275 16.7484 7.34473 15.6104C6.20671 14.4723 5.6377 13.0947 5.6377 11.4775C5.6377 9.86035 6.20671 8.48275 7.34473 7.34473C8.48275 6.20671 9.86035 5.63769 11.4775 5.63769ZM18.9346 5.41309C18.9346 5.78743 18.7998 6.10563 18.5303 6.36768C18.2607 6.62972 17.9313 6.76074 17.542 6.76074C17.1676 6.76074 16.8494 6.62972 16.5874 6.36768C16.3254 6.10563 16.1943 5.78743 16.1943 5.41309C16.1943 5.02376 16.3254 4.69434 16.5874 4.4248C16.8494 4.15527 17.1676 4.02051 17.542 4.02051C17.9163 4.02051 18.242 4.15902 18.519 4.43603C18.7961 4.71305 18.9346 5.03874 18.9346 5.41309Z" />
+        </g>
+
+      </g>
+    </symbol>
+    <symbol id="icon_phone" viewBox="0 0 20 20">
+      <g>
+          <path
+            d="M17.9 9.4H9.40002V10.6H17.9L15.8 12.7L16.7 13.6L19.8 10.5C19.8974 10.3702 19.95 10.2123 19.95 10.05C19.95 9.88772 19.8974 9.72982 19.8 9.6L16.7 6.5L15.8 7.4L17.9 9.4Z"
+            fill="black" />
+          <path
+            d="M8.09995 19.4V13.2C8.0884 13.0447 8.02148 12.8987 7.91136 12.7886C7.80125 12.6785 7.65525 12.6116 7.49995 12.6H3.09995C3.1051 12.9167 3.23318 13.2189 3.45712 13.4428C3.68106 13.6668 3.9833 13.7949 4.29995 13.8H6.79995V18.8H3.09995C2.86319 18.8149 2.62585 18.7825 2.4017 18.7048C2.17756 18.6271 1.97109 18.5057 1.7943 18.3475C1.61751 18.1893 1.47393 17.9976 1.37189 17.7834C1.26986 17.5693 1.21142 17.337 1.19995 17.1V3.10001C1.19175 2.6373 1.3651 2.18977 1.68286 1.85331C2.00062 1.51686 2.43752 1.31824 2.89995 1.30001H6.79995V6.30001H4.39995C4.0833 6.30516 3.78106 6.43324 3.55712 6.65718C3.33318 6.88112 3.2051 7.18336 3.19995 7.50001H7.59995C7.75525 7.48846 7.90125 7.42154 8.01136 7.31142C8.12148 7.2013 8.1884 7.05531 8.19995 6.90001V0.600012C8.15226 0.443872 8.06111 0.304534 7.93715 0.198285C7.81319 0.0920352 7.66155 0.0232649 7.49995 1.23734e-05H3.09995C2.70593 -0.0133408 2.31315 0.0511002 1.94405 0.189651C1.57495 0.328202 1.23678 0.538145 0.948872 0.807477C0.660965 1.07681 0.428969 1.40025 0.266146 1.7593C0.103324 2.11835 0.0128689 2.50598 -4.64045e-05 2.90001V16.8C-0.0290254 17.1977 0.0245894 17.597 0.157426 17.9729C0.290263 18.3489 0.499448 18.6932 0.771825 18.9844C1.0442 19.2756 1.37388 19.5072 1.74012 19.6648C2.10637 19.8224 2.50126 19.9024 2.89995 19.9H7.49995C7.57344 19.915 7.64937 19.9133 7.7221 19.895C7.79484 19.8767 7.86253 19.8423 7.92015 19.7942C7.97777 19.7462 8.02385 19.6859 8.05497 19.6176C8.0861 19.5494 8.10147 19.475 8.09995 19.4Z"
+            fill="black" />
+        </g>
+
+    </symbol>
+    <symbol id="icon_vkontakte" viewBox="0 0 30 30">
+      <g>
+        <g>
+          <path
+            d="M0.0914307 5.48988C0.0914307 4.63485 0.643326 4.17381 1.74712 4.10674L6.00052 4.13189C6.28599 4.13189 6.47629 4.25763 6.57145 4.50911C7.00916 5.76651 7.4992 6.85206 8.04158 7.76577C8.58397 8.67948 9.29287 9.7315 10.1683 10.9218C10.2444 11.0727 10.3681 11.1482 10.5394 11.1482C10.6726 11.1482 10.7773 11.0895 10.8534 10.9721L10.939 10.6955L10.9676 6.34491C10.9676 6.04313 10.8867 5.84195 10.7249 5.74136C10.5632 5.64077 10.2634 5.56532 9.82573 5.51503C9.48318 5.46473 9.3119 5.28031 9.3119 4.96177C9.3119 4.89471 9.32141 4.84442 9.34044 4.81089C9.74009 3.72114 10.8819 3.17627 12.766 3.17627L14.3646 3.15112C15.0878 3.15112 15.6872 3.31039 16.163 3.62893C16.6388 3.94747 16.8767 4.45043 16.8767 5.13781V10.8464C17.0099 10.9302 17.1336 10.9721 17.2478 10.9721C17.5332 10.9721 17.7806 10.8212 17.99 10.5195C20.0834 7.93761 21.2157 6.21079 21.387 5.33899C21.387 5.32223 21.406 5.28031 21.4441 5.21325C21.5773 4.96177 21.7962 4.74383 22.1007 4.55941C22.4051 4.37499 22.6716 4.24925 22.9 4.18219C22.9761 4.14866 23.0617 4.13189 23.1569 4.13189H27.5816L27.867 4.15704C28.2476 4.15704 28.5426 4.31631 28.752 4.63485C28.8281 4.73544 28.8804 4.84442 28.909 4.96177C28.9375 5.07913 28.9565 5.19649 28.966 5.31384C28.9756 5.4312 28.9803 5.49826 28.9803 5.51503V5.69106C28.8471 6.37844 28.5093 7.11192 27.9669 7.89151C27.4245 8.67109 26.7347 9.51355 25.8973 10.4189C25.06 11.3242 24.5366 11.9194 24.3273 12.2044C24.156 12.4056 24.0704 12.59 24.0704 12.7576C24.0704 12.8918 24.1465 13.0426 24.2987 13.2103L28.4665 17.8375C28.6949 18.1058 28.809 18.3992 28.809 18.7177C28.809 19.1033 28.6378 19.4218 28.2952 19.6733C27.9527 19.9248 27.5435 20.0673 27.0677 20.1008L26.5824 20.126H22.2434C22.2244 20.126 22.1863 20.1302 22.1292 20.1385C22.0721 20.1469 22.034 20.1511 22.015 20.1511C21.5963 20.1511 21.2062 19.9919 20.8446 19.6733C20.7114 19.5392 19.8169 18.55 18.1613 16.7059C18.0661 16.5885 17.9329 16.4795 17.7616 16.3789C17.6855 16.6472 17.5856 17.0328 17.4619 17.5357C17.3382 18.0387 17.2478 18.3992 17.1907 18.6171L17.105 19.0446C16.9147 19.6314 16.5151 19.9835 15.9061 20.1008L15.5065 20.126H12.7089C11.1293 20.126 9.55454 19.4889 7.98449 18.2147C6.41444 16.9406 5.0014 15.2934 3.74536 13.2732C2.48932 11.2529 1.31892 8.90162 0.234162 6.21917C0.139008 6.00122 0.0914307 5.75813 0.0914307 5.48988ZM17.2478 12.0032C16.8481 12.0032 16.4865 11.9068 16.163 11.714C15.8395 11.5212 15.6777 11.2571 15.6777 10.9218V5.13781C15.6777 4.8025 15.5826 4.5636 15.3923 4.42109C15.202 4.27859 14.8689 4.20734 14.3931 4.20734L12.766 4.25763C11.9477 4.25763 11.3292 4.38337 10.9105 4.63485C11.7479 4.98692 12.1665 5.55694 12.1665 6.34491V10.7709C12.1285 11.1901 11.9382 11.538 11.5956 11.8146C11.253 12.0912 10.8724 12.2295 10.4538 12.2295C9.88282 12.2295 9.44511 11.9864 9.14062 11.5002C7.65621 9.52193 6.55242 7.64422 5.82924 5.8671L5.57233 5.21325L1.77566 5.18811C1.52826 5.18811 1.39029 5.20068 1.36174 5.22583C1.3332 5.25098 1.31892 5.32223 1.31892 5.43958C1.31892 5.59047 1.33795 5.74974 1.37602 5.9174L1.97549 7.32568C3.57408 10.9637 5.31065 13.8306 7.18519 15.9263C9.05974 18.0219 10.901 19.0698 12.7089 19.0698H15.5635C15.6777 19.0698 15.7634 19.0404 15.8205 18.9817C15.8776 18.9231 15.9251 18.8099 15.9632 18.6422L16.0203 18.3908L16.5627 16.1778C16.7149 15.876 16.8481 15.6748 16.9623 15.5742C17.1717 15.3898 17.4191 15.2976 17.7045 15.2976C18.1613 15.2976 18.6275 15.5407 19.1033 16.0269L21.5297 18.7428C21.682 18.9608 21.8437 19.0698 22.015 19.0698H26.7252C27.2961 19.0698 27.5816 18.944 27.5816 18.6925C27.5816 18.6087 27.553 18.5249 27.4959 18.4411L23.3567 13.8893C23.0332 13.5372 22.8714 13.16 22.8714 12.7576C22.8714 12.3553 23.0237 11.9697 23.3281 11.6008C23.5755 11.2655 24.0561 10.7081 24.7697 9.92849C25.4834 9.1489 26.1067 8.41961 26.6395 7.74062C27.1724 7.06163 27.5245 6.4455 27.6957 5.89225L27.7814 5.56532C27.7623 5.53179 27.7528 5.47731 27.7528 5.40186C27.7528 5.32642 27.7433 5.26355 27.7243 5.21325H23.2425C22.957 5.31384 22.7287 5.46473 22.5574 5.66592L22.3861 6.14373C21.9103 7.30053 20.6638 9.08603 18.6465 11.5002C18.2469 11.8355 17.7806 12.0032 17.2478 12.0032Z" />
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="star" viewBox="0 0 24 12">
+      <g>
+        <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+        <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+      </g>
+    </symbol>
+  </svg>
   <header class="page__header page-header">
-  <nav class="page-header__nav">
-      <a class="page-header__logo logo" href="#">
-        <img class="logo__image " src="./img/logo.svg" width="34" height="38" alt="cat energy.">
-        <img class="logo__sign" src="./img/logo-text.png" width="101" height="19" aria-hidden="true">
-      </a>
+    <nav class="page-header__nav page-header--closed page-header--nojs">
+      <div class="page-header__bar ">
+        <a class="page-header__logo logo" href="./index.html">
+          <picture class="logo__picture">
+            <source media="(min-width: 1200px)" srcset="img/logo-image-large.svg">
+
+            <source media="(min-width: 768px)" srcset="img/logo-image-medium.svg">
+
+            <img class="logo__image" src="./img/logo.svg" width="34" height="38" alt="cat energy.">
+
+
+
+          </picture>
+          <img class="logo__sign" src="./img/logo-text.svg" width="101" height="19" alt="" aria-hidden="true">
+
+        </a>
+
+
 
         <button class="page-header__toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
+      </div>
+      <ul class="page-header__menu site-menu">
+        <li class="site-menu__item"><a class="site-menu__link" href="./index.html">главная</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="./catalog.html">каталог продукции</a></li>
+        <li class="site-menu__item site-menu__item--active"><a class="site-menu__link" href="./form.html">подбор
+            программы</a></li>
+      </ul>
 
-          <ul class="page-header__menu site-menu">
-            <li class="site-menu__item site-menu__item--active"><a class="site-menu__link" href="#">главная</a></li>
-            <li class="site-menu__item"><a class="site-menu__link" href="./catalog.html">каталог продукции</a></li>
-            <li class="site-menu__item"><a class="site-menu__link" href="./form.html">подбор программы</a></li>
-          </ul>
-
-      </nav>
+    </nav>
 
   </header>
-
   <main class="page__main page-main">
-
+    <header class="page-main__header container">
       <h1 class="page-main__heading">Подбор программы</h1>
+      <p class="page-main__subheading">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+    </header>
 
-      <p class="page-main__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <section class="page-main__section form">
-        <h2 class="visually-hidden">Форма подбора.</h2>
+    <form class="page-main__form container" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="visually-hidden">Форма подбора.</h2>
+      <fieldset class="form__group field-group form__group--info">
+        <legend class="visually-hidden">Данные кота.</legend>
+        <ul class="field-group__list field-group_list--contacts">
+          <li class="field-group__item">
+            <label class="field">
+              <span class="field__lead">ИМЯ:*</span>
+              <input type="text" class="input__field" name="cat-name" placeholder="Барсик" required>
+            </label>
+          </li>
+          <li class="field-group__item">
+            <label class="field">
+              <span class="field__lead">Вес (кг):*</span>
+              <input type="number" class="input__field" name="cat-weight" placeholder="7" required>
+            </label>
+          </li>
+          <li class="field-group__item">
+            <label class="field">
+              <span class="field__lead">Возраст (лет):</span>
+              <input type="number" class="input__field" name="cat-age" placeholder="7" required>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__group form__group--diet field-group field-group--border">
+        <legend class="visually-hidden">выберите программу.</legend>
 
-      <form class="page-main__form " action="" method="post">
+        <ul class="field-group__list field-group__list--radio">
+          <li class="field-group__item field-group__item--radio">
+            <label class="control control--radio">
+              <input class="control__input control__input--radio" type="radio" name="target" value="fit" checked>
+              <span class="control__lead"><span>похудение</span></span>
+            </label>
+          </li>
+          <li class="field-group__item field-group__item--radio">
+            <label class="control control--radio">
+              <input class="control__input control__input--radio" type="radio" name="target" value="fitness">
+              <span class="control__lead"><span>Набор массы</span></span>
+            </label>
+          </li>
+          <li class="field-group__item field-group__item--radio">
+            <label class="control control--radio">
+              <input class="control__input control__input--radio" type="radio" name="target" value="fit-help">
+              <span class="control__lead"><span>Не знаю (Нужен ваш совет)</span></span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__group form__group--contacts field-group">
+        <legend class="field-group__heading">
+          <span>Контактные&nbsp;данные (владельца&nbsp;кота)</span>
+        </legend>
+        <ul class="field-group__list field-group__list--contacts">
+          <li class="field-group__item">
+            <label class="field">
+              <span class="field__lead">E-mail:*</span>
+              <input type="email" class="input__field" name="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="field__icon" width="20" height="20">
+                <use xlink:href="#icon_email"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="field-group__item">
+            <label class="field">
+              <span class="field__lead">Телефон:*</span>
+              <input type="number" class="input__field" name="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="field__icon" width="20" height="20">
+                <use xlink:href="#icon_phone"></use>
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__group form__group--message field-group">
+        <legend class="field-group__heading">
+          <span>Комментарий</span>
+        </legend>
+        <textarea class="input__field input__field--full" rows="5" name="comment"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
 
-        <fieldset class="form__group field-group">
-          <legend class="visually-hidden">Данные кота.</legend>
+      </fieldset>
 
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__lead">ИМЯ:*</span>
-                <input type="text" class="input__field" name="cat-name" placeholder="Барсик" required>
-              </label>
-            </li>
+      <fieldset class="form__group form__group--more field-group">
+        <legend class="field-group__heading">
+          <span>Дополнительно</span>
+        </legend>
 
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__lead">Вес (кг):*</span>
-                <input type="number" class="input__field" name="cat-weight" placeholder="7" required>
-              </label>
-            </li>
+        <ul class="field-group__list field-group__list--checkbox">
+          <li class="field-group__item field-group__item--checkbox">
+            <label class="control control--checkbox">
+              <input class="control__input" type="checkbox" name="target" value="sweetener" checked>
+              <span class="control__lead">сахарозаменитель</span>
+            </label>
+          </li>
 
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__lead">Возраст (лет):</span>
-                <input type="number" class="input__field" name="cat-age" placeholder="7" required>
-              </label>
-            </li>
-          </ul>
+          <li class="field-group__item field-group__item--checkbox">
+            <label class="control control--checkbox">
+              <input class="control__input" type="checkbox" name="target" value="water">
+              <span class="control__lead">питьевая вода</span>
+            </label>
+          </li>
 
-        </fieldset>
+          <li class="field-group__item field-group__item--checkbox">
+            <label class="control control--checkbox">
+              <input class="control__input" type="checkbox" name="target" value="milk">
+              <span class="control__lead">молоко</span>
+            </label>
+          </li>
 
-        <fieldset class="form__group field-group">
-          <legend class="visually-hidden">выберите программу.</legend>
+          <li class="field-group__item field-group__item--checkbox">
+            <label class="control control--checkbox">
+              <input class="control__input" type="checkbox" name="target" value="vitamins">
+              <span class="control__lead">витамины</span>
+            </label>
+          </li>
+        </ul>
 
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="control control--radio">
-                <input class="control__input" type="radio" name="target" value="fit" checked>
-                <span class="control__lead">похудение</span>
-              </label>
-            </li>
-
-            <li class="field-group__item">
-              <label class="control control--radio">
-                <input class="control__input" type="radio" name="target" value="fitness" >
-                <span class="control__lead">Набор массы</span>
-              </label>
-            </li>
-
-            <li class="field-group__item">
-              <label class="control control--radio">
-                <input class="control__input" type="radio" name="target" value="fit-help" >
-                <span class="control__lead">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-
-        </fieldset>
-
-        <fieldset class="form__group field-group">
-          <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
-
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__lead">E-mail:*/span>
-                <input type="email" class="input__field" name="email" placeholder="kuklachev@gmail.com" required>
-              </label>
-            </li>
-
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__lead">Телефон:*</span>
-                <input type="number" class="input__field" name="phone" placeholder="8 (960) 900-60-90" required>
-              </label>
-            </li>
-           </ul>
-
-        </fieldset>
-
-        <fieldset class="form__group field-group">
-          <legend class="field-group__heading">Комментарий</legend>
-
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field">
-                 <textarea  class="input__field" rows="5" name="comment" placeholder="Расскажите обо всех повадках кота" ></textarea>
-              </label>
-            </li>
-
-           </ul>
-
-        </fieldset>
-
-        <fieldset class="form__group field-group">
-          <legend class="field-group__heading">Дополнительно</legend>
-
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="control control--checkbox">
-                <input class="control__input" type="checkbox" name="target" value="sweetener" checked>
-                <span class="control__lead">сахарозаменитель</span>
-              </label>
-            </li>
-
-            <li class="field-group__item">
-              <label class="control control--checkbox">
-                <input class="control__input" type="checkbox" name="target" value="water" >
-                <span class="control__lead">питьевая вода</span>
-              </label>
-            </li>
-
-            <li class="field-group__item">
-              <label class="control control--checkbox">
-                <input class="control__input" type="checkbox" name="target" value="milk" >
-                <span class="control__lead">молоко</span>
-              </label>
-            </li>
-
-            <li class="field-group__item">
-              <label class="control control--checkbox">
-                <input class="control__input" type="checkbox" name="target" value="vitamins" >
-                <span class="control__lead">витамины</span>
-              </label>
-            </li>
-          </ul>
-
-        </fieldset>
+      </fieldset>
+      <div class="form__footer">
+        <button class="button form__group--button">отправить заявку</button>
+        <p class="form__group--reuqired">* — Обязательные поля</p>
+      </div>
+    </form>
 
 
 
-      </form>
 
 
 
-</section>
+    <footer class="page-main__footer contacts">
+      <h2 class="visually-hidden">Контакты.</h2>
+      <div class="contacts__container container">
+        <p class="contacts__heading">приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="contacts__adress">
+          <span>ул. Большая Конюшенная, д. 19/8 </span>
+          <span>Санкт-Петербург</span>
+        </p>
+      </div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/location-desktop.jpg 1x, ./img/location-desktop@2x.jpg 2x">
 
+        <source media="(min-width: 768px)" srcset="./img/location-tablet.jpg 1x, ./img/location-tablet@2x.jpg 2x">
 
-
+        <img class="contacts__map" src="./img/location.jpg" width="320" height="378" srcset="./img/location@2x.jpg 2x"
+          alt="Карта к нашему офису.">
+      </picture>
+    </footer>
 
   </main>
 
-
   <footer class="page__footer page-footer">
+    <div class="container footer-container">
 
 
-    <a class="page-footer__logo logo" href="#">
-      <img class="logo__image" src="./img/logo-text.png" width="128" height="24" alt="cat energy.">
-    </a>
-
-    <ul class="page-footer__social social">
-      <li class="social__item"><a href="#" class="social__link">
-        <span class="visually-hidden">ВК.</span>
-      </a></li>
-      <li class="social__item"><a href="#" class="social__link">
-        <span class="visually-hidden">Youtube.</span>
-      </a></li>
-      <li class="social__item"><a href="#" class="social__link">
-        <span class="visually-hidden">Facebook.</span>
-      </a></li>
-    </ul>
-
-
-
-
-      <a href="htmlacedemy.ru" class="page-footer__developer developer">HTML Academy>
-        <span class="visually-hidden">Разработано в</span>
-
-        <img class="developer__image" src="./img/html-academy.svg" width="27" height="34" aria-hidden="true">
-
+      <a class="page-footer__logo" href="./index.html">
+        <img class="logo__sign--footer" src="./img/logo-text.svg" width="128" height="24" alt="cat energy.">
       </a>
 
+      <ul class="footer__links links">
+
+        <li class="links__item"><a href="#" class="social-link">
+            <svg class="item-icon" width="22" height="22">
+              <use xlink:href="#icon_vkontakte"></use>
+            </svg>
+            <span class="visually-hidden">ВК.</span>
+          </a></li>
+
+        <li class="links__item"><a href="#" class="social-link">
+            <svg class="item-icon" width="22" height="22">
+              <use xlink:href="#icon_instagram"></use>
+            </svg>
+
+            <span class="visually-hidden">Youtube.</span>
+          </a></li>
+
+        <li class="links__item"><a href="#" class="social-link">
+            <svg class="item-icon" width="22" height="22">
+              <use xlink:href="#icon_facebook"></use>
+            </svg>
+            <span class="visually-hidden">Telegram.</span>
+          </a></li>
+
+      </ul>
+      <a href="https://htmlacademy.ru/" class="page-footer__developer developer">
+        <span class="developer__text">HTML Academy</span>
+        <svg class="item-icon" width="27" height="34" aria-hidden="true">
+          <use xlink:href="#html-academy"></use>
+        </svg>
 
 
-</footer>
+      </a>
+    </div>
+
+  </footer>
+
+  <script>
+    var navMain = document.querySelector('.page-header__nav');
+    var navToggle = document.querySelector('.page-header__toggler');
+
+    navMain.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header--closed')) {
+        navMain.classList.remove('page-header--closed');
+        navMain.classList.add('page-header--open');
+      } else {
+        navMain.classList.add('page-header--closed');
+        navMain.classList.remove('page-header--open');
+      }
+    });
+  </script>
 
 
 </body>
+
 </html>

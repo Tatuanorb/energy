@@ -1,0 +1,228 @@
+.example {
+  background-color: #eaeaea;
+  padding-top: 27px;
+  padding-bottom: 42px;
+  padding-left: 0;
+  padding-right: 0;
+
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, #ebebeb 458px, #ffffff 458px);
+    padding-top: 0;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 36px;
+    background: linear-gradient(to top, #ebebeb 463px, #ffffff 463px);
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+  }
+}
+
+.example__content {
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+  }
+}
+
+.example__definition {
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.example-list__wrapper {
+  text-align: center;
+  padding-top: 15px;
+  border: 1px solid #cdcdcd;
+  height: 37px;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 168px;
+    padding-top: 24px;
+    height: 46px;
+  }
+}
+
+.example__list {
+  display: grid;
+  font-size: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 36px;
+  padding-top: 21px;
+  padding-bottom: 40px;
+  grid-template-areas: "weight days"
+    "price price";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 162px 162px 1fr;
+    grid-template-areas: "weight days price";
+    padding-top: 54px;
+    gap: 43px;
+    padding-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "weight days"
+      "price price";
+    row-gap: 60px;
+    column-gap: 40px;
+    padding-top: 68px;
+    padding-left: 0;
+  }
+}
+
+.example__spending {
+  font-family: $font-head;
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+  grid-area: price;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+.example__spending-price {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding-top: 0;
+    padding-left: 59px;
+  }
+}
+
+.example__text {
+  padding-top: 39px;
+  font-style: normal;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    padding-left: 8px;
+    padding-right: 36px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 151px;
+    padding-left: 0;
+    padding-right: 153px;
+  }
+}
+
+.example__title {
+  padding: 0 18px;
+  line-height: 14px;
+  position: relative;
+  top: -1px;
+  width: 55px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #eaeaea;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    width: 127px;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
+}
+
+
+.example__images {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 0 66px;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.example__image {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+.example__image--active {
+  display: block;
+}
+
+.example__images img {
+  height: 233px;
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 594px;
+    height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 594px;
+  }
+}
+
+.example__image--hidden {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.example__image--after {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}

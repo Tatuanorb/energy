@@ -1,0 +1,129 @@
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.page-header__bar {
+  padding: 11px 20px;
+  display: grid;
+  grid-template-columns: 33px 1fr 33px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 4/1/5/2;
+    display: block;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    column-gap: 47px;
+    grid-template-columns: 174px 1fr;
+    padding-top: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    grid-template-columns: 50% 1fr;
+    column-gap: 0;
+    padding-top: 57px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-header__toggler {
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.site-menu__link {
+  &:hover {
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header--closed .page-header__toggler::before {
+    content: "";
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    background-color: #000000;
+    left: 10px;
+    top: 0;
+    box-shadow: 0 8px 0 #000000, 0 16px 0 #000000;
+  }
+
+  .page-header--open .page-header__toggler::before {
+    content: "";
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    rotate: 40deg;
+  }
+
+  .page-header--open .page-header__toggler::after {
+    content: "";
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    rotate: 134deg;
+  }
+
+  .page-header--closed .site-menu {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__toggler {
+    display: none;
+  }
+
+  .page-header--nojs .site-menu {
+    display: block;
+  }
+}

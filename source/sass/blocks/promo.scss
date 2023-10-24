@@ -1,0 +1,184 @@
+@import "../fonts.scss";
+
+.promo {
+  background: url("../img/index-background-mobile.jpg"), linear-gradient(#63a63b 0, #63a63b 303px, #ffffff 303px);
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index-background-mobile@2x.png"), linear-gradient(#63a63b 0, #63a63b 303px, #ffffff 303px);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  padding: 27px 0 20px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: #63a63b;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding-top: 46px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+    position: relative;
+    padding-top: 96px;
+    padding-bottom: 183px;
+
+    &::after {
+      content: "";
+      top: -204px;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -2;
+      background-color: #63a63b;
+      background-position: 0 76px;
+      background-repeat: no-repeat;
+      position: absolute;
+      background-image: url("../img/index-background-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index-background-desktop@2x.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.promo__heading {
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+    padding-left: 46px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.promo__text {
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    grid-area: text;
+    padding-left: 48px;
+    padding-bottom: 24px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-left: 80px;
+    margin: 0;
+    padding-bottom: 26px;
+    line-height: 1;
+  }
+}
+
+.promo__image {
+  position: relative;
+  top: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    z-index: -1;
+    padding-bottom: 26px;
+
+    img {
+      width: 708px;
+      height: 609px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -84px;
+    left: 226px;
+
+    img {
+      width: 552px;
+      height: 499px;
+    }
+  }
+}
+
+.promo__button {
+  background-color: $button-background-default;
+  color: $button-color-default;
+  order: 1;
+  display: block;
+  padding: 11px;
+  font-size: 14px;
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+    padding: 18px 0 18px 0;
+    font-size: 20px;
+    max-width: 243px;
+    margin-left: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 244px;
+    margin-left: 80px;
+    padding: 18px 0;
+  }
+}
+
+.promo__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title"
+      "text text"
+      "button button"
+      "image image";
+    position: relative;
+    padding-bottom: 516px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas: "title product"
+      "text product"
+      "button button"
+      "image image";
+    padding-bottom: 0;
+  }
+}

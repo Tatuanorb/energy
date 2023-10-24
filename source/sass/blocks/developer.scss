@@ -1,0 +1,32 @@
+.developer {
+  font-size: 16px;
+  color: #444444;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer__text {
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 23px;
+  }
+}

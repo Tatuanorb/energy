@@ -1,0 +1,67 @@
+.page-main__header {
+  padding: 26px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+    padding-bottom: 50px;
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 0 67px;
+  }
+}
+
+.page-main__heading {
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  grid-area: 1/1/-1/-1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.page-main__subheading {
+  font-family: $font-head;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.5;
+  }
+}
+
+
+.page-main__section {
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.page-main__section--container {
+  @media (min-width: $tablet-width) {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+}

@@ -1,0 +1,57 @@
+.logo {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  column-gap: 56px;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 7px;
+    grid-template-columns: 62px 1fr;
+    justify-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 75px 135px;
+    column-gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__image {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 52px;
+  }
+}
+
+.logo__sign {
+  width: 108px;
+  height: 19px;
+
+  @media (min-width: $desktop-width) {
+    scale: 1.2;
+  }
+}
+
+.logo__picture {
+  @media (min-width: $tablet-width) {
+    scale: 1.75;
+  }
+}
+
+.logo__sign--footer {
+  scale: 1.05;
+}

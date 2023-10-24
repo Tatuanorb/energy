@@ -1,0 +1,72 @@
+.offer {
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), image-set(url("../img/offer.jpg") 1x, url("../img/offer@2x.jpg") 2x);
+  background-color: #63a63b;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 139px;
+    padding: 56px 0 21px 0;
+    height: auto;
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), image-set(url("../img/offer-tablet.jpg") 1x, url("../img/offer-tablet@2x.jpg") 2x);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: none;
+    column-gap: 0;
+    padding-top: 169px;
+    padding-bottom: 0;
+    padding-left: 34px;
+    padding-right: 42px;
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)),
+      image-set(url("../img/offer-desktop.jpg") 1x,
+      url("../img/offer-desktop@2x.jpg") 2x);
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: 50% 28%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 12% 48%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 50% 27%;
+    }
+  }
+}
+
+.offer__text {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 31px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/2;
+    text-align: left;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding-bottom: 31px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

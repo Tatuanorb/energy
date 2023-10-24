@@ -1,0 +1,104 @@
+.page-main__form {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template: "info info"
+      "diet diet"
+      "contacts contacts"
+      "message message"
+      "more more"
+      "button reuqired";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template: "info diet"
+      "contacts contacts"
+      "message message"
+      "more more"
+      "button reuqired";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding-bottom: 10px;
+  }
+}
+
+.form__group--more {
+  padding-bottom: 25px;
+}
+
+.form__group--button {
+
+  font-size: 16px;
+  padding: 11px 79px;
+  background-color: $button-background-default;
+  color: $button-color-default;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 64px;
+    font-size: 20px;
+  }
+}
+
+.form__group--reuqired {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0 31px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form__group--info {
+    grid-area: info;
+  }
+
+  .form__group--diet {
+    grid-area: diet;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid #e7e7e7;
+      padding: 13px 35px 11px 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 22px 0 0 26px;
+    }
+  }
+
+  .form__group--contacts {
+    grid-area: contacts;
+  }
+
+  .form__group--message {
+    grid-area: message;
+  }
+
+  .form__group--more {
+    grid-area: more;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 32px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    gap: 82px;
+    margin-top: 51px;
+  }
+}
