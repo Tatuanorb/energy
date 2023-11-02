@@ -8,10 +8,6 @@
   gap: 12px;
   position: relative;
 
-  &:focus svg {
-    stroke: #68b738;
-  }
-
   &:focus {
     border: 2px solid #444444;
   }
@@ -22,7 +18,11 @@
   }
 }
 
-.input__field {
+.field:focus svg {
+  stroke: #68b738;
+}
+
+.field__input {
   font-family: $font-head;
   font-size: 16px;
   text-transform: uppercase;
@@ -43,7 +43,7 @@
   }
 }
 
-.input__field ~ svg {
+.field__input ~ svg {
   position: absolute;
   fill: none;
   stroke: #000000;
@@ -54,25 +54,26 @@
   }
 }
 
-.input__field:focus-visible ~ svg {
+.field__input:focus-visible ~ svg {
   fill: none;
   stroke: #68b738;
 }
 
-.input__field--error {
+.field__input--error {
   outline: 2px solid rgba(255, 130, 130, 1);
-
-  & ~ svg {
-    stroke: rgba(255, 130, 130, 1);
-  }
 }
 
-.input__field--full {
+.field__input--error ~ svg {
+  stroke: rgba(255, 130, 130, 1);
+}
+
+.field__input--full {
   width: 90%;
   margin-top: 37px;
   margin-bottom: 17px;
   padding-top: 5px;
   padding-bottom: 24px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: 94%;
@@ -80,5 +81,9 @@
     margin-bottom: 58px;
     padding-top: 10px;
     padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
   }
 }

@@ -29,25 +29,25 @@
     gap: 28px 79px;
     padding-top: 57px;
   }
+}
 
-  h1 {
-    border-bottom: 1px solid #ebebeb;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-bottom: 38px;
-    padding-left: 21px;
+.catalog-list__heading {
+  border-bottom: 1px solid #ebebeb;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-bottom: 38px;
+  padding-left: 21px;
 
-    @media (min-width: $tablet-width) {
-      border-bottom: none;
-      margin-left: 0;
-      margin-right: 0;
-      padding-bottom: 26px;
-      padding-left: 0;
-    }
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 26px;
+    padding-left: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding-bottom: 26px;
-      padding-top: 5px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+    padding-top: 5px;
   }
 }

@@ -1,45 +1,8 @@
-.page-main__form {
-  display: grid;
-
-  @media (min-width: $tablet-width) {
-    grid-template: "info info"
-      "diet diet"
-      "contacts contacts"
-      "message message"
-      "more more"
-      "button reuqired";
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template: "info diet"
-      "contacts contacts"
-      "message message"
-      "more more"
-      "button reuqired";
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-    padding-bottom: 10px;
-  }
-}
-
 .form__group--more {
   padding-bottom: 25px;
 }
 
-.form__group--button {
-
-  font-size: 16px;
-  padding: 11px 79px;
-  background-color: $button-background-default;
-  color: $button-color-default;
-
-  @media (min-width: $tablet-width) {
-    padding: 17px 64px;
-    font-size: 20px;
-  }
-}
-
-.form__group--reuqired {
+.form__additional {
   text-align: center;
   margin: 0;
   padding: 20px 0 31px 0;

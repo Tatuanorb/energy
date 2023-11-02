@@ -65,3 +65,27 @@
     padding-right: 9%;
   }
 }
+
+.page-main__form {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template: "info info"
+      "diet diet"
+      "contacts contacts"
+      "message message"
+      "more more"
+      "button reuqired";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template: "info diet"
+      "contacts contacts"
+      "message message"
+      "more more"
+      "button reuqired";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding-bottom: 10px;
+  }
+}

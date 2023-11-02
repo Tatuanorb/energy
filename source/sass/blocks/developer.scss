@@ -12,13 +12,13 @@
     padding-top: 0;
   }
 
-  &:hover svg {
-    fill: #68b738;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.developer:hover svg {
+  fill: #68b738;
 }
 
 .developer__text {

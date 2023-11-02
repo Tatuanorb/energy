@@ -12,9 +12,10 @@
 @import "blocks/example.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/visually-hidden.scss";
+@import "blocks/footer-container.scss";
+@import "./visually-hidden.scss";
 @import "blocks/logo.scss";
-@import "blocks/social.scss";
+@import "blocks/links.scss";
 @import "blocks/site-menu.scss";
 @import "blocks/catalog-list.scss";
 @import "blocks/card.scss";
@@ -23,8 +24,10 @@
 @import "blocks/card-row.scss";
 @import "blocks/offer.scss";
 @import "blocks/form.scss";
+@import "blocks/form-button.scss";
 @import "blocks/field-group.scss";
 @import "blocks/field.scss";
+@import "blocks/field-no-label.scss";
 @import "blocks/control.scss";
 @import "blocks/developer.scss";
 @import "./blocks/switcher.scss";

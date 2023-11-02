@@ -12,21 +12,6 @@
   }
 }
 
-.footer-container {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-  }
-}
-
 .page-footer__logo {
   padding-top: 15px;
   display: flex;

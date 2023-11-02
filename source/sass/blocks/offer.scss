@@ -1,5 +1,5 @@
 .offer {
-  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), image-set(url("../img/offer.jpg") 1x, url("../img/offer@2x.jpg") 2x);
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/offer.jpg");
   background-color: #63a63b;
   height: 290px;
   background-size: cover;
@@ -9,13 +9,21 @@
   flex-direction: column-reverse;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/offer@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 139px;
     padding: 56px 0 21px 0;
     height: auto;
-    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), image-set(url("../img/offer-tablet.jpg") 1x, url("../img/offer-tablet@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/offer-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/offer-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -25,9 +33,11 @@
     padding-bottom: 0;
     padding-left: 34px;
     padding-right: 42px;
-    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)),
-      image-set(url("../img/offer-desktop.jpg") 1x,
-      url("../img/offer-desktop@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/offer-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/offer-desktop@2x.jpg");
+    }
   }
 
   &::before {

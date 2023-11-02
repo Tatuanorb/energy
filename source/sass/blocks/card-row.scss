@@ -35,6 +35,19 @@
   }
 }
 
+.card-row__heading {
+  font-family: $font-head;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 0;
+  }
+}
+
 .card-row__list {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -65,7 +78,7 @@
   }
 }
 
-.card-row_button {
+.card-row__button {
   background-color: $button-background-default;
   color: $button-color-default;
   padding: 10px 0;
