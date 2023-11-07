@@ -1,10 +1,4 @@
 .card {
-  display: grid;
-  grid-template-areas:
-    "image heading"
-    "image list"
-    "button button";
-  grid-template-columns: 1fr 1fr;
   padding-top: 22px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
@@ -13,13 +7,7 @@
   padding-left: 26px;
   padding-right: 26px;
 
-
   @media (min-width: $tablet-width) {
-    grid-template-rows: 200px auto;
-    grid-template-areas: "image image"
-      "heading heading"
-      "list list"
-      "button button";
     padding-top: 38px;
     padding-left: 39px;
     padding-right: 39px;
@@ -34,6 +22,22 @@
   }
 }
 
+.card__inner {
+  display: grid;
+  grid-template-areas:
+    "image heading"
+    "image list";
+
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+      "image image"
+      "heading heading"
+      "list list";
+  }
+}
 
 .card__picture {
   grid-area: image;
@@ -68,7 +72,6 @@
   }
 }
 
-
 .card__list {
   grid-area: list;
   display: grid;
@@ -101,7 +104,6 @@
   }
 }
 
-
 .card__link {
   grid-area: heading;
   text-decoration: none;
@@ -109,21 +111,21 @@
   color: #000000;
   font-size: 16px;
   text-transform: uppercase;
-  max-width: 105px;
+  max-width: 100px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
     text-align: center;
     padding-top: 30px;
     font-size: 20px;
-    padding-left: 43px;
-    padding-right: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 15px;
     line-height: 21px;
   }
@@ -136,6 +138,7 @@
   font-size: 16px;
   padding: 11px 20px;
   margin-top: 11px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;

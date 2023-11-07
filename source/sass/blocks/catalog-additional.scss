@@ -60,7 +60,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    font-size: 34px;
+    font-size: 36px;
+    font-weight: 400;
     padding: 38px 10px 91px 37px;
   }
 
@@ -83,7 +84,6 @@
     outline: 1px solid #cdcdcd;
     padding-bottom: 69px;
   }
-
 
   @media (min-width: $desktop-width) {
     margin: 0;

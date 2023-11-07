@@ -28,7 +28,6 @@
     border-top: 1px solid #ebebeb;
     align-items: center;
 
-
     &:last-child {
       border-bottom: 1px solid #ebebeb;
     }
@@ -38,6 +37,7 @@
 .card-row__heading {
   font-family: $font-head;
   font-size: 16px;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0;
   padding: 15px 0 0 0;

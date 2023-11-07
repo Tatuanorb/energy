@@ -4,7 +4,6 @@
   text-transform: uppercase;
   padding: 0;
 
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -63,7 +62,6 @@
   outline: 1px solid #68b738;
 }
 
-
 .control--radio > input:checked + span::after {
   content: "";
   position: absolute;
@@ -85,7 +83,6 @@
 .control--radio > input:disabled + span::before {
   background-color: #e9ecef;
 }
-
 
 .control--checkbox > input {
   position: absolute;

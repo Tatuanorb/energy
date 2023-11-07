@@ -70,17 +70,6 @@
   }
 }
 
-.site-menu__link {
-  &:hover {
-    color: #000000;
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 @media (max-width: $mobile-width-only) {
   .page-header__nav--closed .page-header__toggler::before {
     content: "";

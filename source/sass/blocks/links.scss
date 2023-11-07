@@ -14,8 +14,11 @@
     border-top: none;
     border-bottom: none;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
 .links__item {
   display: flex;

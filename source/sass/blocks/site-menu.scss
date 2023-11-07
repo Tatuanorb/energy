@@ -41,6 +41,15 @@
   text-decoration: none;
   display: block;
 
+  &:hover {
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 18px;
     padding-bottom: 32px;

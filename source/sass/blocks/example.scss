@@ -5,7 +5,6 @@
   padding-left: 0;
   padding-right: 0;
 
-
   @media (min-width: $tablet-width) {
     background: linear-gradient(to top, #ebebeb 458px, #ffffff 458px);
     padding-top: 0;
@@ -74,7 +73,8 @@
   row-gap: 36px;
   padding-top: 21px;
   padding-bottom: 40px;
-  grid-template-areas: "weight days"
+  grid-template-areas:
+    "weight days"
     "price price";
 
   @media (min-width: $tablet-width) {
@@ -175,7 +175,6 @@
     background-color: #eaeaea;
   }
 }
-
 
 .example__images {
   @media (min-width: $tablet-width) {

@@ -49,7 +49,6 @@
   }
 }
 
-
 .page-main__section {
   padding-left: 22px;
   padding-right: 22px;
@@ -70,7 +69,8 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    grid-template: "info info"
+    grid-template:
+      "info info"
       "diet diet"
       "contacts contacts"
       "message message"
@@ -79,7 +79,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template: "info diet"
+    grid-template:
+      "info diet"
       "contacts contacts"
       "message message"
       "more more"

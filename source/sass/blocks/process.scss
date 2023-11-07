@@ -21,7 +21,6 @@
   display: grid;
   gap: 0;
 
-
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     row-gap: 5px;

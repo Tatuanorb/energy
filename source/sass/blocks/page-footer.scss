@@ -24,6 +24,10 @@
     padding-top: 32px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
